@@ -12,7 +12,10 @@ export default {
 
     theme: {
         extend: {
-          fontFamily: {},
+          fontFamily: {
+            inter:["Inter", 'sans-serif'],
+            fira:["Fira Code", 'monospace']
+          },
           screens: {
             sm: '640px',
             md: '768px',
@@ -20,7 +23,9 @@ export default {
             xl: '1280px',
             '2xl': '1536px'
           },
-          colors: {}
+          colors: {
+            lightText:'#e2e8f0'
+          }
         }
       },
 
