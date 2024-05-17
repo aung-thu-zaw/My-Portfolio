@@ -8,5 +8,9 @@ Route::get('/', function () {
 })->name("home");
 
 Route::get('/projects', function () {
-    return Inertia::render('Projects');
-})->name("projects");
+    return Inertia::render('Projects/Index');
+})->name("projects.index");
+
+Route::get('/projects/detail', function () {
+    return Inertia::render('Projects/Show');
+})->name("projects.show");

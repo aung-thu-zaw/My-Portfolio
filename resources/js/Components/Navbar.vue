@@ -20,7 +20,7 @@ import { Link } from '@inertiajs/vue3';
                 </li>
 
                 <li class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110">
-                    <Link :href="route('projects')">
+                    <Link :href="route('projects.index')">
                     <span class="font-fira text-cyan-300">02. </span> Projects
                     </Link>
                 </li>
