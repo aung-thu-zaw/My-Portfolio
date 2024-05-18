@@ -95,23 +95,23 @@ import { Link } from "@inertiajs/vue3";
                         <li
                             class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
                         >
-                            <a href="">
+                            <Link :href="route('services')">
                                 <span class="font-fira text-cyan-300"
                                     >03.
                                 </span>
                                 Services
-                            </a>
+                            </Link>
                         </li>
 
                         <li
                             class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
                         >
-                            <a href="">
+                            <Link :href="route('testimonials')">
                                 <span class="font-fira text-cyan-300"
                                     >04.
                                 </span>
                                 Testimonials
-                            </a>
+                            </Link>
                         </li>
 
                         <li

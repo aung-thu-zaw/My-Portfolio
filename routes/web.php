@@ -18,3 +18,11 @@ Route::get('/projects', function () {
 Route::get('/projects/detail', function () {
     return Inertia::render('Projects/Show');
 })->name("projects.show");
+
+Route::get('/services', function () {
+    return Inertia::render('Services');
+})->name("services");
+
+Route::get('/testimonials', function () {
+    return Inertia::render('Testimonials');
+})->name("testimonials");
