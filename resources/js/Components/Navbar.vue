@@ -73,12 +73,12 @@ import { Link } from "@inertiajs/vue3";
                         <li
                             class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
                         >
-                            <a href="">
+                            <Link :href="route('experience')">
                                 <span class="font-fira text-cyan-300"
                                     >01.
                                 </span>
                                 Experience
-                            </a>
+                            </Link>
                         </li>
 
                         <li

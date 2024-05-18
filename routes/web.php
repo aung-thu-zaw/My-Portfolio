@@ -7,6 +7,10 @@ Route::get('/', function () {
     return Inertia::render('Home');
 })->name("home");
 
+Route::get('/experience', function () {
+    return Inertia::render('Experience');
+})->name("experience");
+
 Route::get('/projects', function () {
     return Inertia::render('Projects/Index');
 })->name("projects.index");
