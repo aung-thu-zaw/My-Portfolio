@@ -4,19 +4,19 @@
 
 <template>
     <div
-        class="flex items-start p-5 space-x-5 transition-all border rounded-md hover:bg-opacity-50 border-slate-900 hover:border-slate-800 group text-slate-400 hover:bg-slate-800"
+        class="flex flex-col items-center p-5 space-x-5 transition-all border rounded-md md:items-start md:flex-row hover:bg-opacity-50 border-slate-900 hover:border-slate-800 group text-slate-400 hover:bg-slate-800"
     >
-        <div class="overflow-hidden rounded-md ring-2 ring-slate-700">
+        <div
+            class="mb-5 overflow-hidden rounded-md md:mb-0 ring-2 ring-slate-700"
+        >
             <img
                 src="https://www.schoolofsciencery.com/wp-content/uploads/2023/02/Project-Management-Post.jpg"
                 alt=""
                 class="object-cover w-full h-full"
             />
         </div>
-        <!-- <p class="text-xs font-semibold uppercase min-w-[140px] mt-1 ">
-            2024 — Present
-        </p> -->
-        <div class="">
+
+        <div class="text-center md:text-left">
             <div class="mb-3">
                 <a
                     href="#"

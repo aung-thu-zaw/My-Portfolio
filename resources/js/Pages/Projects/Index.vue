@@ -7,8 +7,8 @@ import { Head } from "@inertiajs/vue3";
 <template>
     <Head title="Projects" />
     <AppLayout>
-        <section class="py-12">
-            <div class="container mx-auto space-y-14">
+        <section class="py-10 md:py-12">
+            <div class="container px-8 mx-auto space-y-14">
                 <div class="space-y-5">
                     <h1
                         class="text-4xl font-extrabold text-center text-lightText"

@@ -5,9 +5,9 @@ import MenuItem from "@/Components/MenuItem.vue";
 
 <template>
     <div
-        class="sticky flex flex-col items-start justify-between w-full max-h-screen space-y-20 top-44 md:w-1/2"
+        class="flex flex-col justify-between w-full max-h-screen space-y-14 md:space-y-20 md:items-start md:sticky md:top-44 md:w-1/2"
     >
-        <div class="space-y-5">
+        <div class="space-y-5 text-center md:text-left">
             <p class="font-semibold uppercase text-md text-lightText">
                 Hi There 👋🏼 , I'm
             </p>
@@ -18,18 +18,24 @@ import MenuItem from "@/Components/MenuItem.vue";
                 Full Stack Web Developer
             </p>
 
-            <p class="text-md text-slate-400 max-w-[500px] text-left !mb-14">
+            <p
+                class="text-md text-slate-400 max-w-[500px] mx-auto md:mx-0 text-center md:text-left !mb-14"
+            >
                 I specialize in creating dynamic and responsive web applications
                 using modern web technologies. With a passion for both front-end
                 and back-end development, I enjoy turning ideas into fully
                 functional digital experiences.
             </p>
 
-            <div class="w-full">
-                <ul class="space-y-5 text-xs font-bold uppercase">
+            <div
+                class="flex items-center justify-center w-full md:justify-start"
+            >
+                <ul
+                    class="flex flex-row items-center justify-between space-x-5 text-xs font-bold uppercase md:flex-col md:space-x-0 md:space-y-5 md:items-start"
+                >
                     <li class="flex items-center space-x-3 text-lightText">
                         <div
-                            class="w-16 border border-b-0 border-lightText"
+                            class="hidden w-16 border border-b-0 md:block border-lightText"
                         ></div>
                         <div class="tracking-wider">
                             <span class="font-fira text-cyan-300">01 - </span>
@@ -43,7 +49,7 @@ import MenuItem from "@/Components/MenuItem.vue";
         </div>
 
         <!-- Social Media  -->
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center justify-center w-full md:justify-start">
             <SocialLinkButton
                 href="#"
                 icon="fa-brands fa-facebook"

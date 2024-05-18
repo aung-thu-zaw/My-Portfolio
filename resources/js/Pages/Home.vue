@@ -11,9 +11,9 @@ import { Head } from "@inertiajs/vue3";
     <Head title="Aung Thu Zaw" />
 
     <AppLayout>
-        <section class="py-20">
+        <section class="py-10 md:py-20">
             <div
-                class="container relative flex flex-col items-start justify-between h-full mx-auto space-x-5 md:flex-row"
+                class="container relative flex flex-col items-start justify-between h-full px-8 mx-auto space-y-10 md:space-y-0 md:space-x-5 md:flex-row"
             >
                 <ProfileSection />
 

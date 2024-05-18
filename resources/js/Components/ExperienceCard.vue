@@ -2,9 +2,11 @@
 
 <template>
     <div
-        class="flex items-start p-5 transition-all border rounded-md hover:bg-opacity-50 border-slate-900 hover:border-slate-800 group text-slate-400 hover:bg-slate-800"
+        class="flex flex-col items-start p-5 transition-all border rounded-md md:flex-row hover:bg-opacity-50 border-slate-900 hover:border-slate-800 group text-slate-400 hover:bg-slate-800"
     >
-        <p class="text-xs font-semibold uppercase min-w-[140px] mt-1">
+        <p
+            class="text-xs font-semibold uppercase min-w-[140px] md:mt-1 md:mb-0 mb-3"
+        >
             2024 — Present
         </p>
         <div class="">

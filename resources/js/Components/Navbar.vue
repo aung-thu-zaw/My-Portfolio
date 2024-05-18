@@ -1,83 +1,136 @@
 <script setup lang="ts">
+import ResumeButton from "@/Components/ResumeButton.vue";
 import { Link } from "@inertiajs/vue3";
 // Your Code
 </script>
 
 <template>
-    <nav
-        class="sticky top-0 z-50 flex items-center justify-between px-16 py-6 bg-slate-900"
+    <header
+        class="sticky top-0 z-50 flex flex-wrap w-full py-6 text-sm md:px-16 bg-slate-900 sm:justify-start sm:flex-nowrap"
     >
-        <Link
-            :href="route('home')"
-            class="text-lg font-extrabold tracking-wide font-fira text-cyan-300"
+        <nav
+            class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+            aria-label="Global"
         >
-            Portfolio
-        </Link>
-
-        <div class="">
-            <ul class="flex items-center space-x-8 text-xs font-semibold">
-                <li
-                    class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+            <div class="flex items-center justify-between">
+                <Link
+                    :href="route('home')"
+                    class="flex-none text-lg font-extrabold tracking-wide font-fira text-cyan-300"
                 >
-                    <a href="">
-                        <span class="font-fira text-cyan-300">01. </span>
-                        Experience
-                    </a>
-                </li>
-
-                <li
-                    class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
-                >
-                    <Link :href="route('projects.index')">
-                        <span class="font-fira text-cyan-300">02. </span>
-                        Projects
-                    </Link>
-                </li>
-
-                <li
-                    class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
-                >
-                    <a href="">
-                        <span class="font-fira text-cyan-300">03. </span>
-                        Services
-                    </a>
-                </li>
-
-                <li
-                    class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
-                >
-                    <a href="">
-                        <span class="font-fira text-cyan-300">04. </span>
-                        Testimonials
-                    </a>
-                </li>
-
-                <li
-                    class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
-                >
-                    <a href="">
-                        <span class="font-fira text-cyan-300">05. </span>
-                        Contact
-                    </a>
-                </li>
-
-                <li>
+                    Portfolio
+                </Link>
+                <div class="sm:hidden">
                     <button
-                        class="relative flex items-center justify-start w-10 h-10 overflow-hidden transition-all duration-200 border rounded-full shadow-lg cursor-pointer bg-slate-800 hover:bg-cyan-600 hover:border-cyan-500 text-lightText border-slate-600 group hover:w-28 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+                        type="button"
+                        class="inline-flex items-center justify-center p-2 text-xs font-bold border rounded-lg shadow-sm text-lightText border-slate-600 bg-slate-900 hs-collapse-toggle gap-x-2 hover:bg-slate-800 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-collapse="#navbar-collapse-with-animation"
+                        aria-controls="navbar-collapse-with-animation"
+                        aria-label="Toggle navigation"
                     >
-                        <div
-                            class="flex items-center justify-center w-full text-white transition-all duration-300 group-hover:justify-start group-hover:px-3 text-md"
+                        <svg
+                            class="flex-shrink-0 hs-collapse-open:hidden size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div
-                            class="absolute text-xs font-bold text-white uppercase transition-all duration-300 transform translate-x-full opacity-0 right-5 group-hover:translate-x-0 group-hover:opacity-100"
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg
+                            class="flex-shrink-0 hidden hs-collapse-open:block size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                         >
-                            Resume
-                        </div>
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                        Menu
                     </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                </div>
+            </div>
+            <div
+                id="navbar-collapse-with-animation"
+                class="hidden overflow-hidden transition-all duration-300 hs-collapse basis-full grow sm:block"
+            >
+                <div class="w-full">
+                    <ul
+                        class="flex flex-col items-start w-full pl-3 mt-5 space-y-5 text-xs font-semibold sm:space-y-0 sm:items-center sm:space-x-8 sm:flex-row sm:justify-end sm:mt-0 sm:ps-5"
+                    >
+                        <li
+                            class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+                        >
+                            <a href="">
+                                <span class="font-fira text-cyan-300"
+                                    >01.
+                                </span>
+                                Experience
+                            </a>
+                        </li>
+
+                        <li
+                            class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+                        >
+                            <Link :href="route('projects.index')">
+                                <span class="font-fira text-cyan-300"
+                                    >02.
+                                </span>
+                                Projects
+                            </Link>
+                        </li>
+
+                        <li
+                            class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+                        >
+                            <a href="">
+                                <span class="font-fira text-cyan-300"
+                                    >03.
+                                </span>
+                                Services
+                            </a>
+                        </li>
+
+                        <li
+                            class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+                        >
+                            <a href="">
+                                <span class="font-fira text-cyan-300"
+                                    >04.
+                                </span>
+                                Testimonials
+                            </a>
+                        </li>
+
+                        <li
+                            class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
+                        >
+                            <a href="">
+                                <span class="font-fira text-cyan-300"
+                                    >05.
+                                </span>
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="hidden md:block">
+                            <ResumeButton />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 </template>
