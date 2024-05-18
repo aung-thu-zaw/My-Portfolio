@@ -1,14 +1,15 @@
-<script setup>
-import { onBeforeUnmount } from 'vue';
-import { onMounted } from 'vue';
-import { ref } from 'vue';
+<script setup lang="ts">
+import { onBeforeUnmount } from "vue";
+import { onMounted } from "vue";
+import { ref } from "vue";
 
 const spotlight = ref(null);
 
 const spotlightStyle = ref({
     left: "0px",
     top: "0px",
-    background: 'radial-gradient(circle, rgba(29, 37, 67, 0.4) 30%, rgba(29, 37, 67, 0.2) 90%)'
+    background:
+        "radial-gradient(circle, rgba(29, 37, 67, 0.4) 30%, rgba(29, 37, 67, 0.2) 90%)",
 });
 
 const moveSpotlight = () => {
