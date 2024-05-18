@@ -26,3 +26,7 @@ Route::get('/services', function () {
 Route::get('/testimonials', function () {
     return Inertia::render('Testimonials');
 })->name("testimonials");
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+})->name("contact");

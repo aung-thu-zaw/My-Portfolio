@@ -117,12 +117,12 @@ import { Link } from "@inertiajs/vue3";
                         <li
                             class="tracking-wider transition-all text-lightText hover:text-cyan-300 hover:scale-110"
                         >
-                            <a href="">
+                            <Link :href="route('contact')">
                                 <span class="font-fira text-cyan-300"
                                     >05.
                                 </span>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
 
                         <li class="hidden md:block">
